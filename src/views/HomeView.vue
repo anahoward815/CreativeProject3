@@ -7,17 +7,17 @@
       </form>
     </div>
   </div>
-  <ProductList :products="products" />
+  <classList :classes="classes" />
 </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import ProductList from "@/components/ProductList.vue"
+import classList from "@/components/classList.vue"
 export default {
   name: 'HomeView',
   components: {
-    ProductList
+    classList
   },
   data() {
     return {
@@ -25,8 +25,8 @@ export default {
     }
   },
   computed: {
-    products() {
-      return this.$root.$data.products.filter(product => product.name.toLowerCase().search(this.searchText.toLowerCase()) >= 0);
+    classes() {
+      return this.$root.$data.classes.filter(class => class.name.toLowerCase().search(this.searchText.toLowerCase()) >= 0);
     }
   },
 }

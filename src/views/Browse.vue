@@ -2,36 +2,35 @@
 <div>
   <div class="pure-menu pure-menu-horizontal">
     <ul class="pure-menu-list">
-      <li class="pure-menu-item"><a @click="select('United States')" href="#" class="pure-menu-link">United States</a></li>
-      <li class="pure-menu-item"><a @click="select('Canada')" href="#" class="pure-menu-link">Canada</a></li>
-      <li class="pure-menu-item"><a @click="select('Mexico')" href="#" class="pure-menu-link">Mexico</a></li>
-      <li class="pure-menu-item"><a @click="select('Brazil')" href="#" class="pure-menu-link">Brazil</a></li>
+      <li class="pure-menu-item"><a @click="select('United States')" href="#" class="pure-menu-link">General Classes</a></li>
+      <li class="pure-menu-item"><a @click="select('Canada')" href="#" class="pure-menu-link">Major Classes</a></li>
+      <li class="pure-menu-item"><a @click="select('Mexico')" href="#" class="pure-menu-link">Elective Classes</a></li>
     </ul>
   </div>
-  <ProductList :products="products" />
+  <classList :classes="classes" />
 </div>
 </template>
 
 <script>
-import ProductList from "../components/ProductList.vue"
+import classList from "../components/classList.vue"
 export default {
   name: 'BrowseView',
   components: {
-    ProductList
+    classList
   },
   data() {
     return {
-      country: '',
+      classType: '',
     }
   },
   computed: {
-    products() {
-      return this.$root.$data.products.filter(product => product.country === this.country);
+    classes() {
+      return this.$root.$data.classes.filter(class => class.classType === this.classType);
     }
   },
   methods: {
-    select(country) {
-      this.country = country;
+    select(classType) {
+      this.classType = classType;
     }
   }
 }

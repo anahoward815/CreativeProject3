@@ -4,7 +4,7 @@ import router from './router'
 import mock from './mock-data.js'
 
 let data = {
-  products: mock,
+  classes: mock,
   cart: []
 }
 
