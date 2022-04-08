@@ -1,17 +1,17 @@
 <template>
 <div class="wrapper">
   <div class="classes">
-    <div class="class" v-for="classItem in classes" :key="classItem.id">
+    <div class="class" v-for="class in class" :key="class.id">
       <div class="info">
-        <h1>{{classItem.name}}</h1>
-        <p>{{classItem.classType}}</p>
+        <h1>{{class.name}}</h1>
+        <p>{{class.classType}}</p>
       </div>
       <div class="image">
-        <img :src="'/images/classes/'+classItem.image">
-      </div>
-      <div class="price">
-        <h2>{{classItem.price}}</h2>
-        <button class="auto" @click="addToCart(classItem)">Add to Cart</button>
+        <img :src="'/images/classes/'+class.image">
+      </div>   
+      <div class="creditHours">
+        <h2>{{class.creditHours}}</h2>
+        <button class="auto" @click="addToCart(class)">Add to Cart</button>
       </div>
     </div>
   </div>
@@ -22,11 +22,11 @@
 export default {
   name: 'classList',
   props: {
-    classes: Array,
+    class: Array,
   },
   methods: {
-    addToCart(classItem) {
-      this.$root.$data.cart.push(classItem);
+    addToCart(class) {
+      this.$root.$data.cart.push(class);
     },
   },
 };
@@ -39,27 +39,27 @@ export default {
   justify-content: center;
 }
 
-.class {
+.classes {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.class {
+.classItem {
   margin: 10px;
   margin-top: 50px;
   width: 200px;
 }
 
-.class img {
+.classItem img {
   border: 2px solid #333;
   height: 250px;
   width: 200px;
   object-fit: cover;
 }
 
-.class .image {
+.classItem .image {
   display: flex;
   justify-content: center;
   margin-bottom: 5px;
@@ -86,7 +86,7 @@ export default {
 }
 
 
-.price {
+.creditHours {
   display: flex;
 }
 
