@@ -24,7 +24,7 @@
   <router-view />
   <div id="footer">
     <ul class='footer'>
-      <li class="link"><a href="https://github.com/BYUCS260/grocery-store-anahoward815.git">Github</a></li>
+      <li class="link"><a href="https://github.com/anahoward815/CreativeProject3.git">Github</a></li>
     </ul> 
   </div>
 </div>
