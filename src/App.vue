@@ -3,19 +3,19 @@
   <div id="menu">
     <div id="brand">
       <router-link to="/">
-        <img src="/images/logo.png">
+        <img src="/images/byulogo.png">
       </router-link>
     </div>
     <div id="side">
       <router-link to="/browse">
         <div class="menu-item browse">
-          <img src="/images/globe.png">
+          <img src="/images/browse.png">
           <p>Browse</p>
         </div>
       </router-link>
       <router-link to="/cart">
         <div class="menu-item">
-          <img src="/images/love.png">
+          <img src="/images/shoppingcart.png">
           <p>{{ this.cartSize }} items</p>
         </div>
       </router-link>

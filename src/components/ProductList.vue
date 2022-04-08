@@ -4,10 +4,10 @@
     <div class="product" v-for="product in products" :key="product.id">
       <div class="info">
         <h1>{{product.name}}</h1>
-        <p>{{product.country}}</p>
+        <p>{{product.classType}}</p>
       </div>
       <div class="image">
-        <img :src="'/images/products/'+product.image">
+        <img :src="'/images/classes/'+class.image">
       </div>
       <div class="price">
         <h2>{{product.price}}</h2>
