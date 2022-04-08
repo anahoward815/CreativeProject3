@@ -40,19 +40,17 @@ export default {
       return this.$root.$data.cart.length;
     },
     creditTotal() {
-      return this.calculateTotal;
-    }
-  },
-  methods: {
-    calculateTotal() {
       let credits = 0;
       let cartArray = this.$root.$data.cart;
+      if (this.cartSize == 0) {
+        return credits;
+      }
       for (let i = 0; i < this.cartSize; i++) {
         credits += cartArray[i].creditHours;
       }
       return credits;
     }
-  }
+  },
 }
 </script>
 
