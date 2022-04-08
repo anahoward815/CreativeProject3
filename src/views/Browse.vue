@@ -2,9 +2,9 @@
 <div>
   <div class="pure-menu pure-menu-horizontal">
     <ul class="pure-menu-list">
-      <li class="pure-menu-item"><a @click="select('United States')" href="#" class="pure-menu-link">General Classes</a></li>
-      <li class="pure-menu-item"><a @click="select('Canada')" href="#" class="pure-menu-link">Major Classes</a></li>
-      <li class="pure-menu-item"><a @click="select('Mexico')" href="#" class="pure-menu-link">Elective Classes</a></li>
+      <li class="pure-menu-item"><a @click="select('General Classes')" href="#" class="pure-menu-link">General Classes</a></li>
+      <li class="pure-menu-item"><a @click="select('Major Classes')" href="#" class="pure-menu-link">Major Classes</a></li>
+      <li class="pure-menu-item"><a @click="select('Elective Classes')" href="#" class="pure-menu-link">Elective Classes</a></li>
     </ul>
   </div>
   <classList :classes="classes" />

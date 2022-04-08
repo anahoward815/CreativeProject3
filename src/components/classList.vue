@@ -67,10 +67,10 @@ export default {
 }
 
 .info {
-  background: #F2921D;
+  background: #00008b;
   color: #000;
-  padding: 10px 30px;
-  height: 80px;
+  padding: 10px 20px;
+  height: 100px;
 }
 
 .info h1 {
