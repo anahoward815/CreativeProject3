@@ -1,17 +1,17 @@
 <template>
 <div class="wrapper">
   <div class="classes">
-    <div class="class" v-for="class in class" :key="class.id">
+    <div class="class" v-for="classItem in classes" :key="classItem.id">
       <div class="info">
-        <h1>{{class.name}}</h1>
-        <p>{{class.classType}}</p>
+        <h1>{{classItem.name}}</h1>
+        <p>{{classItem.classType}}</p>
       </div>
       <div class="image">
-        <img :src="'/images/classes/'+class.image">
+        <img :src="'/images/classes/'+classItem.image">
       </div>
       <div class="price">
-        <h2>{{class.price}}</h2>
-        <button class="auto" @click="addToCart(class)">Add to Cart</button>
+        <h2>{{classItem.price}}</h2>
+        <button class="auto" @click="addToCart(classItem)">Add to Cart</button>
       </div>
     </div>
   </div>
@@ -22,11 +22,11 @@
 export default {
   name: 'classList',
   props: {
-    class: Array,
+    classes: Array,
   },
   methods: {
-    addToCart(class) {
-      this.$root.$data.cart.push(class);
+    addToCart(classItem) {
+      this.$root.$data.cart.push(classItem);
     },
   },
 };

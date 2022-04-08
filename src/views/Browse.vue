@@ -25,7 +25,7 @@ export default {
   },
   computed: {
     classes() {
-      return this.$root.$data.classes.filter(class => class.classType === this.classType);
+      return this.$root.$data.classes.filter(classItem => classItem.classType === this.classType);
     }
   },
   methods: {

@@ -26,7 +26,7 @@ export default {
   },
   computed: {
     classes() {
-      return this.$root.$data.classes.filter(class => class.name.toLowerCase().search(this.searchText.toLowerCase()) >= 0);
+      return this.$root.$data.classes.filter(classItem => classItem.name.toLowerCase().search(this.searchText.toLowerCase()) >= 0);
     }
   },
 }

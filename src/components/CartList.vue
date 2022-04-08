@@ -1,20 +1,20 @@
 <template>
 <div class="wrapper">
-  <div class="classes">
+  <div class="products">
     <div v-if="cartIsEmpty()">
       <h1>Cart is empty!</h1>
     </div>
-    <div v-else class="class" v-for="class in cartItems" :key="class.id">
+    <div v-else class="product" v-for="product in cartItems" :key="product.id">
       <div class="info">
-        <h1>{{class.name}}</h1>
-        <p>{{class.country}}</p>
+        <h1>{{product.name}}</h1>
+        <p>{{product.country}}</p>
       </div>
       <div class="image">
-        <img :src="'/images/classes/'+class.image">
+        <img :src="'/images/products/'+product.image">
       </div>
       <div class="price">
-        <h2>{{class.price}}</h2>
-        <button class="auto" @click="removeFromCart(class)">Remove from Cart</button>
+        <h2>{{product.price}}</h2>
+        <button class="auto" @click="removeFromCart(product)">Remove from Cart</button>
       </div>
     </div>
   </div>
@@ -28,8 +28,8 @@ export default {
     cartItems: Array,
   },
   methods: {
-    removeFromCart(class) {
-      this.$root.$data.cart.splice(this.$root.$data.cart.indexOf(class), 1);
+    removeFromCart(product) {
+      this.$root.$data.cart.splice(this.$root.$data.cart.indexOf(product), 1);
     },
     cartIsEmpty() {
       if (this.$root.$data.cart.length === 0) {
@@ -49,27 +49,27 @@ export default {
   justify-content: center;
 }
 
-.classs {
+.products {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.class {
+.product {
   margin: 10px;
   margin-top: 50px;
   width: 200px;
 }
 
-.class img {
+.product img {
   border: 2px solid #333;
   height: 250px;
   width: 200px;
   object-fit: cover;
 }
 
-.class .image {
+.product .image {
   display: flex;
   justify-content: center;
   margin-bottom: 5px;

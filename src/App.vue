@@ -17,6 +17,7 @@
         <div class="menu-item">
           <img src="/images/shoppingcart.png">
           <p>{{ this.cartSize }} items</p>
+          <p>{{ this.creditTotal }} credits </p>
         </div>
       </router-link>
     </div>
@@ -37,8 +38,21 @@ export default {
   computed: {
     cartSize() {
       return this.$root.$data.cart.length;
+    },
+    creditTotal() {
+      return this.calculateTotal;
     }
   },
+  methods: {
+    calculateTotal() {
+      let credits = 0;
+      let cartArray = this.$root.$data.cart;
+      for (let i = 0; i < this.cartSize; i++) {
+        credits += cartArray[i].creditHours;
+      }
+      return credits;
+    }
+  }
 }
 </script>
 
