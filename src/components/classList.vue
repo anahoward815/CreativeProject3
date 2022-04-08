@@ -67,8 +67,8 @@ export default {
 }
 
 .info {
-  background: #00008b;
-  color: #000;
+  background: #020274;
+  color: #ffffff;
   padding: 10px 20px;
   height: 100px;
 }

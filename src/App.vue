@@ -62,7 +62,7 @@ export default {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #00008b;
+  background-color: #020274;
   position: fixed;
   bottom: 0;
   left: 0;
