@@ -23,7 +23,7 @@
 export default {
   name: 'classList',
   props: {
-    class: Array,
+    classes: Array,
   },
   methods: {
     addToCart(classItem) {
