@@ -91,7 +91,7 @@ let mock = [{
   {
     id: 12,
     classID: "SWELL 186",
-    name: "Vaolleyball, Beginning",
+    name: "Volleyball, Beginning",
     creditHours: .5,
     classType: "Elective",
     image: "electiveimage.png"
