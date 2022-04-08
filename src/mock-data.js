@@ -4,7 +4,7 @@ let mock = [{
     name: "American Heritage",
     creditHours: 3,
     classType: "General",
-    image: 'egg-salad.jpg'
+    image: 'generalstudieslogo.png'
   },
   {
     id: 2,
@@ -12,7 +12,7 @@ let mock = [{
     name: "Test, Analysis, & Verification",
     creditHours: 3,
     classType: "Major",
-    image: "sweet-potato.jpg"
+    image: "csimage.png"
   },
   {
     id: 3,
@@ -20,7 +20,7 @@ let mock = [{
     name: "Ethics & Computers in Society",
     creditHours: 2,
     classType: "Major",
-    image: 'focaccia.jpg'
+    image: 'csimage.png'
   },
   {
     id: 4,
@@ -28,7 +28,7 @@ let mock = [{
     name: "Software Engineering Lab 3",
     creditHours: 1,
     classType: "Major",
-    image: 'lotus-rootlets.jpg'
+    image: 'csimage.png'
   },
   {
     id: 5,
@@ -36,7 +36,7 @@ let mock = [{
     name: "Software Design",
     creditHours: 3,
     classType: "Major",
-    image: 'toothpicks.jpg'
+    image: 'csimage.png'
 
   },
   {
@@ -45,7 +45,7 @@ let mock = [{
     name: "Data Structures",
     creditHours: 3,
     classType: "Major",
-    image: 'sage-rubbed.jpg'
+    image: 'csimage.png'
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ let mock = [{
     name: "Civilization: Music 1",
     creditHours: 3,
     classType: "General",
-    image: 'mango-nectar.jpg'
+    image: 'generalstudieslogo.png'
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ let mock = [{
     name: "Intro to Human Geography",
     creditHours: 3,
     classType: "General",
-    image: 'cucumber.jpg'
+    image: 'generalstudieslogo.png'
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ let mock = [{
     name: "Calculus 1",
     creditHours: 4,
     classType: "General",
-    image: 'fava-beans.jpg'
+    image: 'generalstudieslogo.png'
 
   },
   {
@@ -78,7 +78,7 @@ let mock = [{
     name: "World Civilization Since 1500",
     creditHours: 3,
     classType: "General",
-    image: 'coconut.jpg'
+    image: 'generalstudieslogo.png'
   },
   {
     id: 11,
@@ -86,7 +86,7 @@ let mock = [{
     name: "Technical Communication",
     creditHours: 3,
     classType: "Major",
-    image: "potato-chips.jpg"
+    image: "csimage.png"
   },
   {
     id: 12,
@@ -94,7 +94,7 @@ let mock = [{
     name: "Vaolleyball, Beginning",
     creditHours: .5,
     classType: "Elective",
-    image: "rye-flour.jpg"
+    image: "electiveimage.png"
   },
   {
     id: 13,
@@ -102,7 +102,7 @@ let mock = [{
     name: "Running",
     creditHours: .5,
     classType: "Elective",
-    image: "feta-cheese.jpg"
+    image: "electiveimage.png"
   },
   {
     id: 14,
@@ -110,7 +110,7 @@ let mock = [{
     name: "Bowling, Beginning",
     creditHours: .5,
     classType: "Elective",
-    image: "cheddar-cheese.jpg"
+    image: "electiveimage.png"
   },
   {
     id: 15,
@@ -118,7 +118,7 @@ let mock = [{
     name: "Badminton",
     creditHours: .5,
     classType: "Elective",
-    image: "capers.jpg"
+    image: "electiveimage.png"
   },
 ]
 
