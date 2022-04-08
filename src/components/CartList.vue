@@ -4,18 +4,18 @@
     <div v-if="cartIsEmpty()">
       <h1>Cart is empty!</h1>
     </div>
-    <div v-else class="class" v-for="class in cartItems" :key="class.id">
+    <div v-else class="classItem" v-for="classItem in cartItems" :key="classItem.id">
       <div class="info">
-      <h1>{{class.classID}}</h1>
-        <h1>{{class.name}}</h1>
-        <p>{{class.classType}}</p>
+      <h1>{{classItem.classID}}</h1>
+        <h1>{{classItem.name}}</h1>
+        <p>{{classItem.classType}}</p>
       </div>
       <div class="image">
-        <img :src="'/images/classes/'+class.image">
+        <img :src="'/images/classes/'+classItem.image">
       </div>
       <div class="creditHours">
-        <h2>{{class.creditHours}}</h2>
-        <button class="auto" @click="removeFromCart(class)">Remove from Cart</button>
+        <h2>{{classItem.creditHours}}</h2>
+        <button class="auto" @click="removeFromCart(classItem)">Remove from Cart</button>
       </div>
     </div>
   </div>
@@ -29,8 +29,8 @@ export default {
     cartItems: Array,
   },
   methods: {
-    removeFromCart(class) {
-      this.$root.$data.cart.splice(this.$root.$data.cart.indexOf(class), 1);
+    removeFromCart(classItem) {
+      this.$root.$data.cart.splice(this.$root.$data.cart.indexOf(classItem), 1);
     },
     cartIsEmpty() {
       if (this.$root.$data.cart.length === 0) {
